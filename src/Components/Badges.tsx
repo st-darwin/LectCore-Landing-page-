@@ -38,7 +38,7 @@ const Badges = () => {
           </h2>
           
           <p className="text-xs sm:text-sm text-slate-500">
-            Say goodbye to endless scrolling in WhatsApp groups. Here is how LectCore keeps students connected and organized.
+            Say goodbye to endless scrolling in Telegram groups. Here is how LectCore keeps students connected and organized.
           </p>
 
           {/* Interactive Filter Pills */}

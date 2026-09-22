@@ -1,4 +1,4 @@
-import { type LucideIcon, Sparkles, MessageSquareQuote, Award } from 'lucide-react';
+import { type LucideIcon, Layers, MessageSquareQuote, Award } from 'lucide-react';
 
 export interface NavItem {
   label: string;
@@ -7,7 +7,7 @@ export interface NavItem {
 }
 
 export const navItems: NavItem[] = [
-  { label: 'Features', href: '#features', icon: Sparkles },
+  { label: 'Features', href: '#features', icon: Layers },
   { label: 'Testimonials', href: '#testimonials', icon: MessageSquareQuote },
   { label: 'Excellence', href: '#excel', icon: Award },
 ];

@@ -5,7 +5,7 @@ const Features = () => {
     {
       icon: BookOpen,
       title: "Centralized Slide Repository",
-      description: "Never hunt through 500-message WhatsApp threads again. Every lecture note, PDF, and past question is indexed by course code and date.",
+      description: "Never hunt through 500-message Telegram threads again. Every lecture note, PDF, and past question is indexed by course code and date.",
       badge: "Instant Access",
       color: "text-indigo-600 bg-indigo-50 border-indigo-100",
       span: "lg:col-span-7",

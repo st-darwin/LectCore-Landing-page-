@@ -1,4 +1,4 @@
-import { MessageSquare, Send, CheckCheck, Sparkles, ArrowRight } from 'lucide-react';
+import { MessageSquare, Send, CheckCheck, ArrowRight } from 'lucide-react';
 
 const LecturerConnect = () => {
   return (
@@ -14,7 +14,7 @@ const LecturerConnect = () => {
           {/* Left Column: Content */}
           <div className="lg:col-span-6 space-y-5 sm:space-y-6 text-left">
             <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-indigo-50 border border-indigo-100 text-[11px] sm:text-xs font-semibold text-indigo-700 shadow-2xs">
-              <Sparkles size={13} className="text-indigo-600" />
+           
               <span>Direct Academic Channel</span>
             </div>
 

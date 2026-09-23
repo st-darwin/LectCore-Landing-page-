@@ -1,4 +1,4 @@
-
+import React from 'react';
 import { Zap, Megaphone, ClipboardList, FileText, CheckCircle2, ArrowRight, RefreshCw } from 'lucide-react';
 
 const RealTIme = () => {
@@ -34,24 +34,24 @@ const RealTIme = () => {
   ];
 
   return (
-    <section className="relative py-24 px-6 overflow-hidden bg-slate-950 text-white">
+    <section className="relative py-20 sm:py-28 px-4 sm:px-6 lg:px-8 overflow-hidden bg-slate-950 text-white">
       {/* Background Glow Accents */}
-      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] bg-indigo-600/15 blur-[140px] pointer-events-none rounded-full" />
+      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[300px] sm:w-[500px] h-[300px] sm:h-[500px] bg-indigo-600/15 blur-[120px] sm:blur-[160px] pointer-events-none rounded-full" />
 
-      <div className="max-w-7xl mx-auto space-y-16 relative z-10">
+      <div className="max-w-7xl mx-auto space-y-12 sm:space-y-16 relative z-10">
         
         {/* Section Header */}
         <div className="text-center max-w-2xl mx-auto space-y-4">
           <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-indigo-500/10 border border-indigo-500/20 text-indigo-400 text-xs font-semibold tracking-wide uppercase shadow-sm">
-            <Zap className="w-3.5 h-3.5 animate-pulse" />
+            <Zap className="w-3.5 h-3.5 animate-pulse shrink-0" />
             <span>Event-Driven Architecture</span>
           </div>
           
-          <h2 className="text-3xl sm:text-4xl font-extrabold tracking-tight text-white leading-tight">
-            Everything Synchronized in <span className="text-transparent bg-clip-text bg-gradient-to-r from-indigo-400 to-purple-400">Real-Time</span>
+          <h2 className="text-2xl sm:text-4xl lg:text-5xl font-extrabold tracking-tight text-white leading-tight">
+            Everything Synchronized in <span className="text-transparent bg-clip-text bg-gradient-to-r from-indigo-400 via-purple-400 to-pink-400">Real-Time</span>
           </h2>
           
-          <p className="text-sm sm:text-base text-slate-400 leading-relaxed">
+          <p className="text-sm sm:text-base text-slate-400 leading-relaxed px-2 sm:px-0">
             Eliminate communication gaps. Announcements, assignment drops, file uploads, and submission states link together seamlessly to power a live academic notification hub.
           </p>
         </div>
@@ -60,15 +60,15 @@ const RealTIme = () => {
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
           
           {/* Left Cards List (4 Features) */}
-          <div className="lg:col-span-7 grid grid-cols-1 sm:grid-cols-2 gap-4">
+          <div className="lg:col-span-7 grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-5">
             {syncFeatures.map((feat, index) => (
               <div 
                 key={index}
-                className="group p-6 rounded-[2rem] bg-slate-900/60 backdrop-blur-xl border border-slate-800/80 hover:border-indigo-500/40 transition-all duration-300 flex flex-col justify-between shadow-xl hover:-translate-y-1"
+                className="group p-5 sm:p-6 rounded-3xl bg-slate-900/60 backdrop-blur-xl border border-slate-800/80 hover:border-indigo-500/40 transition-all duration-300 flex flex-col justify-between shadow-xl hover:-translate-y-1"
               >
-                <div className="space-y-4">
+                <div className="space-y-3 sm:space-y-4">
                   <div className="flex items-center justify-between">
-                    <div className="p-3 rounded-2xl bg-slate-800/80 border border-slate-700/50 shadow-inner">
+                    <div className="p-2.5 sm:p-3 rounded-2xl bg-slate-800/80 border border-slate-700/50 shadow-inner">
                       {feat.icon}
                     </div>
                     <span className={`px-2.5 py-1 rounded-full text-[10px] font-bold border ${feat.badgeColor}`}>
@@ -76,11 +76,11 @@ const RealTIme = () => {
                     </span>
                   </div>
 
-                  <h3 className="text-sm font-bold text-slate-200 group-hover:text-indigo-400 transition-colors">
+                  <h3 className="text-sm sm:text-base font-bold text-slate-200 group-hover:text-indigo-400 transition-colors">
                     {feat.title}
                   </h3>
 
-                  <p className="text-xs text-slate-400 leading-relaxed font-normal">
+                  <p className="text-xs sm:text-sm text-slate-400 leading-relaxed font-normal">
                     {feat.description}
                   </p>
                 </div>
@@ -90,68 +90,70 @@ const RealTIme = () => {
 
           {/* Right Side: Live Sync Activity Mockup Widget */}
           <div className="lg:col-span-5">
-            <div className="relative p-6 sm:p-8 rounded-[2.5rem] bg-gradient-to-br from-slate-900 via-slate-900/90 to-indigo-950/40 border border-slate-800 shadow-2xl backdrop-blur-2xl overflow-hidden">
+            <div className="relative p-5 sm:p-8 rounded-[2rem] sm:rounded-[2.5rem] bg-gradient-to-br from-slate-900 via-slate-900/90 to-indigo-950/40 border border-slate-800/90 shadow-2xl backdrop-blur-2xl overflow-hidden">
               
               {/* Decorative Header Bar */}
-              <div className="flex items-center justify-between pb-5 border-b border-slate-800">
-                <div className="flex items-center gap-2.5">
-                  <span className="w-3 h-3 rounded-full bg-rose-500/80" />
-                  <span className="w-3 h-3 rounded-full bg-amber-500/80" />
-                  <span className="w-3 h-3 rounded-full bg-emerald-500/80" />
-                  <span className="ml-2 text-xs font-mono text-slate-400">client.subscribe()</span>
+              <div className="flex items-center justify-between pb-4 sm:pb-5 border-b border-slate-800">
+                <div className="flex items-center gap-2">
+                  <span className="w-2.5 h-2.5 sm:w-3 sm:h-3 rounded-full bg-rose-500/80" />
+                  <span className="w-2.5 h-2.5 sm:w-3 sm:h-3 rounded-full bg-amber-500/80" />
+                  <span className="w-2.5 h-2.5 sm:w-3 sm:h-3 rounded-full bg-emerald-500/80" />
+                  <span className="ml-1 sm:ml-2 text-[11px] sm:text-xs font-mono text-slate-400">client.subscribe()</span>
                 </div>
-                <span className="inline-flex items-center gap-1.5 text-[11px] font-medium text-emerald-400 bg-emerald-500/10 px-2.5 py-1 rounded-full border border-emerald-500/20">
-                  <RefreshCw className="w-3 h-3 animate-spin" /> Live Stream
+                <span className="inline-flex items-center gap-1.5 text-[10px] sm:text-[11px] font-medium text-emerald-400 bg-emerald-500/10 px-2.5 py-1 rounded-full border border-emerald-500/20">
+                  <RefreshCw className="w-3 h-3 animate-spin shrink-0" /> Live Stream
                 </span>
               </div>
 
               {/* Simulated Live Stream Events Feed */}
-              <div className="py-6 space-y-3.5">
-                <div className="p-3.5 rounded-2xl bg-slate-800/50 border border-slate-700/40 flex items-start gap-3 animate-in fade-in slide-in-from-bottom-2 duration-300">
+              <div className="py-5 sm:py-6 space-y-3">
+                
+                <div className="p-3 sm:p-3.5 rounded-2xl bg-slate-800/50 border border-slate-700/40 flex items-start gap-3 transition-all hover:bg-slate-800/80">
                   <div className="p-2 rounded-xl bg-purple-500/10 text-purple-400 shrink-0">
                     <Megaphone className="w-4 h-4" />
                   </div>
                   <div className="flex-1 min-w-0">
-                    <div className="flex items-center justify-between">
+                    <div className="flex items-center justify-between gap-2">
                       <p className="text-xs font-semibold text-slate-200 truncate">New Broadcast Posted</p>
-                      <span className="text-[10px] text-slate-500">Just now</span>
+                      <span className="text-[10px] text-slate-500 shrink-0">Just now</span>
                     </div>
                     <p className="text-[11px] text-slate-400 truncate mt-0.5">CSC 201: Mid-semester test schedule update</p>
                   </div>
                 </div>
 
-                <div className="p-3.5 rounded-2xl bg-slate-800/50 border border-slate-700/40 flex items-start gap-3 opacity-90">
+                <div className="p-3 sm:p-3.5 rounded-2xl bg-slate-800/50 border border-slate-700/40 flex items-start gap-3 opacity-90 transition-all hover:bg-slate-800/80">
                   <div className="p-2 rounded-xl bg-amber-500/10 text-amber-400 shrink-0">
                     <ClipboardList className="w-4 h-4" />
                   </div>
                   <div className="flex-1 min-w-0">
-                    <div className="flex items-center justify-between">
+                    <div className="flex items-center justify-between gap-2">
                       <p className="text-xs font-semibold text-slate-200 truncate">Assignment Assigned</p>
-                      <span className="text-[10px] text-slate-500">2m ago</span>
+                      <span className="text-[10px] text-slate-500 shrink-0">2m ago</span>
                     </div>
                     <p className="text-[11px] text-slate-400 truncate mt-0.5">Data Structures Lab 3 submission open</p>
                   </div>
                 </div>
 
-                <div className="p-3.5 rounded-2xl bg-slate-800/50 border border-slate-700/40 flex items-start gap-3 opacity-75">
+                <div className="p-3 sm:p-3.5 rounded-2xl bg-slate-800/50 border border-slate-700/40 flex items-start gap-3 opacity-75 transition-all hover:bg-slate-800/80">
                   <div className="p-2 rounded-xl bg-blue-500/10 text-blue-400 shrink-0">
                     <FileText className="w-4 h-4" />
                   </div>
                   <div className="flex-1 min-w-0">
-                    <div className="flex items-center justify-between">
+                    <div className="flex items-center justify-between gap-2">
                       <p className="text-xs font-semibold text-slate-200 truncate">Material Uploaded</p>
-                      <span className="text-[10px] text-slate-500">15m ago</span>
+                      <span className="text-[10px] text-slate-500 shrink-0">15m ago</span>
                     </div>
                     <p className="text-[11px] text-slate-400 truncate mt-0.5">Chapter 4 Slide Deck added to repository</p>
                   </div>
                 </div>
+
               </div>
 
               {/* Bottom Footer Callout */}
-              <div className="pt-4 border-t border-slate-800/80 flex items-center justify-between text-xs text-slate-400">
+              <div className="pt-4 border-t border-slate-800/80 flex flex-col sm:flex-row items-center justify-between gap-2 text-xs text-slate-400 text-center sm:text-left">
                 <span>Zero-latency database websockets</span>
                 <span className="text-indigo-400 font-semibold flex items-center gap-1 cursor-pointer hover:underline">
-                  Explore docs <ArrowRight className="w-3.5 h-3.5" />
+                  Explore docs <ArrowRight className="w-3.5 h-3.5 shrink-0" />
                 </span>
               </div>
 

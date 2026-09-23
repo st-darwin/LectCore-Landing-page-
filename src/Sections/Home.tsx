@@ -6,6 +6,7 @@ import Testimonials from "../Components/Testimonial"
 import LecturerConnect from "../Components/LecturerConnect"
 import CallToAction from "../Components/CallToAction"
 import Footer from "../Components/Footer"
+import RealTIme from "../Components/RealTIme"
 
 const Home = () => {
   return (
@@ -15,6 +16,7 @@ const Home = () => {
       <Badges/>
       <Features/>
       <LecturerConnect/>
+      <RealTIme />
       <Testimonials />
       <CallToAction/>
       <Footer />
